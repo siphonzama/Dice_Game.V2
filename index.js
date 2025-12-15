@@ -7,6 +7,7 @@ window.addEventListener("load", function() {
     }
 });
 
+// Function to set dice images and determine winner
 function setDice(randomNumber1, randomNumber2) {
     document.querySelector(".img1").setAttribute("src", "./images/dice" + randomNumber1 + ".png");
     document.querySelector(".img2").setAttribute("src", "./images/dice" + randomNumber2 + ".png");
@@ -20,6 +21,7 @@ function setDice(randomNumber1, randomNumber2) {
     }
 }
 
+// Event listener for button click to roll dice
 document.querySelector("button").addEventListener("click", function() {
     var randomNumber1 = Math.floor(Math.random() * 6) + 1;
     var randomNumber2 = Math.floor(Math.random() * 6) + 1;
